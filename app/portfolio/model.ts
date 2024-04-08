@@ -3,7 +3,7 @@ export const portfolioData = [
         title: "GGQ Desktop Application",
         time: "( 2021.06 ~ 2023.06 )",
         duration: "2년",
-        image: "1.png",
+        image: "1.webp",
         html: `
             <p class="mb-2">
               <b class="text-[#bd871f]"
@@ -34,7 +34,7 @@ export const portfolioData = [
         title: "Play Like a Pro(PLAP)",
         time: "( 2022.06 ~ 2022.11 )",
         duration: "6개월",
-        image: "2.png",
+        image: "2.webp",
         html: `
             <p class="mb-2">
               <b class="text-[#bd871f]"
@@ -64,7 +64,7 @@ export const portfolioData = [
         title: "GGQ PRO",
         time: "( 2021.01 ~ 2021.04 )",
         duration: "4개월",
-        image: "3.png",
+        image: "3.webp",
         html: `
             <p class="mb-2">
               <b class="text-[#bd871f]">롤 프로팀 내부의 경기, 프로 팀들 간의 비공식 경기를 기록</b
@@ -93,7 +93,7 @@ export const portfolioData = [
         title: "GGQ Remote Banpick",
         time: "( 2022.01 ~ 2022.03 )",
         duration: "3개월",
-        image: "4.png",
+        image: "4.webp",
         html: `
             <p class="mb-2">
               <b class="text-[#bd871f]"
@@ -120,7 +120,7 @@ export const portfolioData = [
         title: "Image Converter",
         time: "( 2022.03 ~ 2022.04 )",
         duration: "1개월",
-        image: "5.png",
+        image: "5.webp",
         html: `
            <p class="mb-2">
               <b class="text-[#bd871f]"

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Chip from "../_components/Chip";
 import Profile from "../_components/Profile";
 import { portfolioData } from "./model";
@@ -38,12 +37,11 @@ export default function Portfolio() {
                                                 </p>
                                                 <Chip text={item.duration} />
                                             </div>
-                                            <Image
+                                            <img
                                                 className="mb-10"
                                                 src={`/images/${item.image}`}
                                                 width={0}
                                                 height={0}
-                                                sizes="100"
                                                 alt={""}
                                                 style={{
                                                     width: "auto",
@@ -51,6 +49,7 @@ export default function Portfolio() {
                                                     objectFit: "contain",
                                                 }}
                                             />
+
                                             <div className="flex flex-row">
                                                 <div
                                                     className="flex-1 flex flex-col"

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
@@ -23,7 +22,7 @@ export default function RootLayout({
                 suppressHydrationWarning={true}
             >
                 <header className="flex flex-row justify-between items-center w-[100%] h-[80px] border-b-[#bec4cd] border-b-[1px] px-[40px]">
-                    <Image
+                    <img
                         src="/images/logo.png"
                         alt="logo"
                         className="rounded-full"

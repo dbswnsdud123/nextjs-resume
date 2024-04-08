@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { PiNotePencilBold } from "react-icons/pi";
 import { GrMailOption } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
@@ -8,7 +7,7 @@ export default function Profile() {
     return (
         <>
             <section id="profile" className="flex flex-row mb-[40px]">
-                <Image
+                <img
                     src="/images/profile.jpg"
                     alt="logo"
                     className="rounded-[20px] mr-[40px]"
