@@ -1,7 +1,17 @@
-export const portfolioData = [
+export interface Portfolio {
+    title: string;
+    time: string;
+    duration: string;
+    image: string;
+    html: string;
+    fe: string[];
+    deployment: string[];
+}
+
+export const portfolios = [
     {
         title: "GGQ Desktop Application",
-        time: "( 2021.06 ~ 2023.06 )",
+        time: "( 2022.02 ~ 2023.06 )",
         duration: "2년",
         image: "1.webp",
         html: `

@@ -1,14 +1,8 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 
 const NotoSans = Noto_Sans_KR({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-    title: "YJY Resume",
-    description: "Yoon Jun Young's resume",
-};
 
 export default function RootLayout({
     children,
