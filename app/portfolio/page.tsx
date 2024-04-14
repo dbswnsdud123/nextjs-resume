@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import createDOMPurify from "dompurify";
 import { JSDOM } from "jsdom";
 
-import Chip from "../_components/Chip";
+import Chip from "../_components/common/Chip";
 import Profile from "../_components/Profile";
 import { portfolios, Portfolio } from "../_data/portfolio";
 
@@ -31,18 +31,24 @@ const PortfolioItem = ({
                     <p className="text-[20px] mr-3">{portfolio.time}</p>
                     <Chip text={portfolio.duration} />
                 </div>
-                <img
-                    className="mb-10"
-                    src={`/images/${portfolio.image}`}
-                    width={0}
-                    height={0}
-                    alt={""}
-                    style={{
-                        width: "auto",
-                        height: "600px",
-                        objectFit: "contain",
-                    }}
-                />
+                <div className="flex flex-row justify-center items-center mb-10">
+                    {portfolio.image.map((image) => {
+                        return (
+                            <img
+                                key={image}
+                                className="mx-2 rounded-[8px]"
+                                src={`/images/${image}`}
+                                width={0}
+                                height={0}
+                                alt={""}
+                                style={{
+                                    width: `${100 / portfolio.image.length}%`,
+                                    height: "auto",
+                                }}
+                            />
+                        );
+                    })}
+                </div>
 
                 <div className="flex flex-row">
                     <div

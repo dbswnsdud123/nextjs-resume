@@ -2,7 +2,7 @@ export interface Portfolio {
     title: string;
     time: string;
     duration: string;
-    image: string;
+    image: string[];
     html: string;
     fe: string[];
     deployment: string[];
@@ -10,16 +10,15 @@ export interface Portfolio {
 
 export const portfolios = [
     {
-        title: "GGQ Desktop Application",
-        time: "( 2022.02 ~ 2023.06 )",
-        duration: "2년",
-        image: "1.webp",
+        title: "GGQ Desktop Web Application",
+        time: "( 22.01 ~ 23.06 )",
+        duration: "1년 6개월",
+        image: ["1_1.webp"],
         html: `
             <p class="mb-2">
-              <b class="text-[#bd871f]"
-                >게이머들의 전적 통계, 게임의 정보, 자동 전적 검색 등 게임의 편의성을 위한 데스크톱
-                어플리케이션</b
-              >입니다.
+              <b class="text-[#bd871f]">
+              게이머들의 전적 통계, 게임의 정보, 자동 전적 검색 등 게임의 편의성을 위한 데스크톱 어플리케이션
+              </b>입니다.
             </p>
             <p class="mb-2">
               당시 완성되지 않았던 AI를 활용한 분석을 서비스하는 것은 반발감만 얻을 것으로 판단해서
@@ -41,10 +40,10 @@ export const portfolios = [
         deployment: ["AWS S3", "AWS Cloudfront"],
     },
     {
-        title: "Play Like a Pro(PLAP)",
-        time: "( 2022.06 ~ 2022.11 )",
-        duration: "6개월",
-        image: "2.webp",
+        title: "GGQ Web",
+        time: "( 22.01 ~ 23.06 )",
+        duration: "1년 6개월",
+        image: ["2_1.webp", "2_2.webp"],
         html: `
             <p class="mb-2">
               <b class="text-[#bd871f]"
@@ -71,10 +70,10 @@ export const portfolios = [
         deployment: ["AWS S3", "AWS Cloudfront", "AWS Route53"],
     },
     {
-        title: "GGQ PRO",
-        time: "( 2021.01 ~ 2021.04 )",
+        title: "GGQ PRO Web",
+        time: "( 21.01 ~ 21.06 )",
         duration: "4개월",
-        image: "3.webp",
+        image: ["3_1.webp", "3_2.webp"],
         html: `
             <p class="mb-2">
               <b class="text-[#bd871f]">롤 프로팀 내부의 경기, 프로 팀들 간의 비공식 경기를 기록</b
@@ -98,60 +97,5 @@ export const portfolios = [
         `,
         fe: ["Vue", "Vuex", "Vuetify", "TypeScript"],
         deployment: ["AWS S3", "AWS Cloudfront", "AWS Route53"],
-    },
-    {
-        title: "GGQ Remote Banpick",
-        time: "( 2022.01 ~ 2022.03 )",
-        duration: "3개월",
-        image: "4.webp",
-        html: `
-            <p class="mb-2">
-              <b class="text-[#bd871f]"
-                >핸드폰으로 게임 시작 전 단계를 원격으로 진행할 수 있게 해주는 웹 어플리케이션</b
-              >입니다.
-            </p>
-            <p class="mb-2">
-              PC방에서 회사 동료들과 게임을 하는 도중, 옆에 친구들에게 자신의 게임 전 행동 양식을
-              설명해주고 화장실을 가거나, 담배를 피우러 가는 등 자리를 비우는 것을 많이 보고 이에
-              아이디어를 얻어 시작한 프로젝트입니다.
-            </p>
-            <p class="mb-2">
-              이 프로젝트를 통해
-              <b class="text-[#bd871f]"
-                >다양한 화면에서의 반응형 UI, 다양한 브라우저에서의 웹 표준</b
-              >
-              등에 대해 깊이 고민하고 개발할 수 있게 되었습니다.
-            </p>
-        `,
-        fe: ["PWA", "Vue", "Vuex", "Tailwind CSS", "TypeScript"],
-        deployment: ["AWS S3", "AWS Cloudfront", "AWS Route53"],
-    },
-    {
-        title: "Image Converter",
-        time: "( 2022.03 ~ 2022.04 )",
-        duration: "1개월",
-        image: "5.webp",
-        html: `
-           <p class="mb-2">
-              <b class="text-[#bd871f]"
-                >다양한 이미지 파일 형식을 webp 형식으로 변환시켜 주는 데스크톱 어플리케이션</b
-              >입니다.
-            </p>
-            <p class="mb-2">
-              이미지 파일의 용량을 줄이고, 브라우저에서의 이미지 렌더링 속도를 향상 시키기 위해
-              이미지 형식을 webp로 변환하는 작업이 필요했습니다. 디자이너분들이 많은 양의 이미지를
-              변환 시키는 작업을 하려면 유료 프로그램을 사용해야하고, 속도도 느리기 때문에 이를
-              해결하기 위해 개발하게 되었습니다.
-            </p>
-            <p class="mb-2">
-              이 프로젝트를 통해
-              <b class="text-[#bd871f]"
-                >한 사람의 작은 아이디어와 능동적인 실천이 여러 사람의 업무를 편하게</b
-              >
-              해줄 수 있다는 것은 느꼈습니다.
-            </p>
-        `,
-        fe: ["Electron", "Vue", "Vuex", "Tailwind CSS", "TypeScript"],
-        deployment: ["AWS S3", "AWS Cloudfront"],
     },
 ];

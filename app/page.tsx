@@ -14,7 +14,7 @@ export default function Career() {
     return (
         <>
             <main className="flex flex-row justify-center p-[40px]">
-                <section className="max-w-[1200px]">
+                <section className="max-w-[900px]">
                     <Profile />
                     <Introduce />
                     <Experience />

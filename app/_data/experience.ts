@@ -10,7 +10,7 @@ export interface Experience {
 export const experiences = [
     {
         title: "(주)지지큐컴퍼니",
-        time: "2023.01 ~ 2023.06",
+        time: "23.01 ~ 23.06",
         duration: "3년 6개월",
         role: "리그오브레전드 게임 편의성 제공 및 인공지능 코칭 서비스",
         descriptions: [

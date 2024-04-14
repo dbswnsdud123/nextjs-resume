@@ -4,12 +4,12 @@ const EducationItem = ({ education }: { education: Education }) => {
     return (
         <>
             <div className="flex flex-row mb-10">
-                <div className="flex flex-col mr-[40px]">
+                <div className="flex flex-col w-[250px]">
                     <p className="text-[32px] font-bold mb-[16px]">
                         {education.time}
                     </p>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex-1 flex flex-col">
                     <p className="text-[32px] font-bold mb-[16px]">
                         {education.title}
                     </p>
