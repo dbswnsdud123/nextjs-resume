@@ -4,7 +4,7 @@ import { JSDOM } from "jsdom";
 
 import Chip from "../_components/common/Chip";
 import Profile from "../_components/Profile";
-import { portfolios, Portfolio } from "../_data/portfolio";
+import { portfolios, PortfolioType } from "../_data/portfolio";
 
 export const metadata: Metadata = {
   title: "윤준영 포트폴리오",
@@ -15,7 +15,7 @@ const PortfolioItem = ({
   portfolio,
   index,
 }: {
-  portfolio: Portfolio;
+  portfolio: PortfolioType;
   index: number;
 }) => {
   const window = new JSDOM("").window;

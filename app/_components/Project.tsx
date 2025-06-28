@@ -1,7 +1,7 @@
 import Chip from "./common/Chip";
-import { projects, Project } from "../_data/project";
+import { projects, ProjectType } from "../_data/project";
 
-const ProjectItem = ({ projects }: { projects: Project }) => {
+const ProjectItem = ({ projects }: { projects: ProjectType }) => {
   return (
     <>
       <div className="flex flex-row mb-10">

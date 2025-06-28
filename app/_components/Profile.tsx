@@ -1,7 +1,5 @@
-import { PiNotePencilBold } from "react-icons/pi";
 import { GrMailOption } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
-import { FaRegBookmark } from "react-icons/fa6";
 
 const Description = ({
   title,

@@ -8,7 +8,7 @@ function getDurationString(start: string, end?: string): string {
   return `${years}년 ${months}개월`;
 }
 
-export interface Project {
+export interface ProjectType {
   title: string;
   time: string;
   duration: string;
